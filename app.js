@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ------------------------------------------------------------ */
     const loader = document.getElementById('page-loader');
     window.addEventListener('load', () => {
-        setTimeout(() => loader && loader.classList.add('loaded'), 300);
+        setTimeout(() => loader && loader.classList.add('loaded'), 200);
     });
 
     /* ------------------------------------------------------------
