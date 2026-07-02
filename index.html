@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Patail | Family Medicine &amp; Wellness Products</title>
+    <meta name="description"
+        content="Dr. Patail offers trusted medical consultation and doctor-recommended healthcare products. Book an appointment or shop certified wellness essentials." />
+
+    <!-- Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🩺</text></svg>" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+    <!-- ===== Loading Animation ===== -->
+    <div id="page-loader" aria-hidden="true">
+        <div class="loader-mark">
+            <svg viewBox="0 0 120 40" class="loader-pulse">
+                <polyline points="0,20 30,20 38,6 46,34 54,20 120,20" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- ===== Skip Link ===== -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- ===== Navigation ===== -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar" aria-label="Primary">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    <span class="brand-mark"><i class="bi bi-heart-pulse-fill"></i></span>
+                    <span class="brand-text">Dr. Patail<small>Family Medicine &amp; Wellness</small></span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                    aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                    <span class="toggler-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navMenu">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                    <a href="#appointment" class="btn btn-primary-cta d-none d-lg-inline-flex">Book Appointment</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <!-- ===== Hero Section ===== -->
+        <section id="home" class="hero">
+            <div class="hero-bg" aria-hidden="true">
+                <svg class="hero-ecg" viewBox="0 0 1200 200" preserveAspectRatio="none">
+                    <polyline points="0,120 200,120 240,40 280,180 320,120 1200,120" />
+                </svg>
+            </div>
+            <div class="container">
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-6 order-2 order-lg-1" data-reveal>
+                        <p class="eyebrow"><i class="bi bi-patch-check-fill"></i> Board-Certified Physician</p>
+                        <h1 class="hero-title">Care that listens. <span>Products you can trust.</span></h1>
+                        <p class="hero-desc">Dr. Patail blends 10 years of clinical experience with a carefully
+                            vetted range of wellness products &mdash; so every recommendation is one she'd give her own
+                            family.</p>
+                        <div class="hero-actions">
+                            <a href="#appointment" class="btn btn-primary-cta"><i class="bi bi-calendar2-check"></i>
+                                Book Appointment</a>
+                            <a href="#products" class="btn btn-outline-cta"><i class="bi bi-bag-heart"></i> Shop
+                                Products</a>
+                        </div>
+                        <div class="hero-trust">
+                            <div class="trust-item"><strong>10+</strong><span>Years Experience</span></div>
+                            <div class="trust-item"><strong>12k+</strong><span>Patients Cared For</span></div>
+                            <div class="trust-item"><strong>4.9<i class="bi bi-star-fill"></i></strong><span>Patient
+                                    Rating</span></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2" data-reveal data-reveal-delay="150">
+                        <div class="hero-photo-wrap">
+                            <div class="hero-ring" aria-hidden="true"></div>
+                            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=800&auto=format&fit=crop"
+                                alt="Dr. Patail smiling in a white coat with a stethoscope" class="hero-photo" />
+                            <div class="hero-badge">
+                                <i class="bi bi-shield-fill-check"></i>
+                                <div><strong>MD, MBBS</strong><span>Internal Medicine</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== About Doctor ===== -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-5" data-reveal>
+                        <div class="about-photo-wrap">
+                            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=800&auto=format&fit=crop"
+                                alt="Dr. Patail consulting with a patient in her clinic" class="about-photo" />
+                            <div class="about-photo-accent" aria-hidden="true"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7" data-reveal data-reveal-delay="150">
+                        <p class="section-eyebrow">About the Doctor</p>
+                        <h2 class="section-title">Two decades of listening before prescribing</h2>
+                        <p class="section-lead">Dr. Patail is a board-certified physician specializing in internal
+                            medicine, preventive care, and nutrition-led wellness. Her practice is built on one
+                            principle: understand the person before treating the symptom.</p>
+
+                        <ul class="about-list">
+                            <li><i class="bi bi-mortarboard-fill"></i> MBBS &mdash; AIIMS New Delhi, MD (Internal
+                                Medicine)</li>
+                            <li><i class="bi bi-award-fill"></i> Fellowship in Clinical Nutrition &amp; Metabolic Health
+                            </li>
+                            <li><i class="bi bi-patch-check-fill"></i> Certified in Diabetes Care &amp; Dermatology
+                                Consultation</li>
+                            <li><i class="bi bi-heart-pulse-fill"></i> Specializes in preventive medicine &amp;
+                                long-term wellness</li>
+                        </ul>
+
+                        <div class="row g-4 counters">
+                            <div class="col-6 col-md-3">
+                                <div class="counter-box">
+                                    <span class="counter" data-target="10">0</span><span class="counter-suffix">+</span>
+                                    <p>Years Experience</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="counter-box">
+                                    <span class="counter" data-target="12000">0</span><span
+                                        class="counter-suffix">+</span>
+                                    <p>Patients Treated</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="counter-box">
+                                    <span class="counter" data-target="98">0</span><span class="counter-suffix">%</span>
+                                    <p>Satisfaction Rate</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="counter-box">
+                                    <span class="counter" data-target="40">0</span><span class="counter-suffix">+</span>
+                                    <p>Wellness Products</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Featured Healthcare Products ===== -->
+        <section id="products" class="section products-section">
+            <div class="container">
+                <div class="section-head text-center" data-reveal>
+                    <p class="section-eyebrow">Doctor-Recommended</p>
+                    <h2 class="section-title">Featured Healthcare Products</h2>
+                    <p class="section-lead mx-auto">Every product on this shelf has been personally reviewed and
+                        approved by Dr. Sharma before it earns a place here.</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Product 1 -->
+                    <div class="col-sm-6 col-lg-3" data-reveal>
+                        <div class="product-card">
+                            <div class="product-img-wrap">
+                                <span class="product-tag">Bestseller</span>
+                                <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=600&auto=format&fit=crop"
+                                    alt="Vitamin D3 immunity support supplement bottle">
+                            </div>
+                            <div class="product-body">
+                                <h3>Vitamin D3 + K2</h3>
+                                <p>Immunity &amp; bone health support, doctor-formulated.</p>
+                                <div class="product-rating" aria-label="Rated 4.8 out of 5">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-half"></i>
+                                    <span>4.8</span>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">₹24.99</span>
+                                    <button type="button" class="btn btn-buy">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="col-sm-6 col-lg-3" data-reveal data-reveal-delay="100">
+                        <div class="product-card">
+                            <div class="product-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1550572017-edd951b55104?q=80&w=600&auto=format&fit=crop"
+                                    alt="Omega 3 fish oil softgel supplement bottle">
+                            </div>
+                            <div class="product-body">
+                                <h3>Omega-3 Fish Oil</h3>
+                                <p>Heart &amp; brain support with molecularly distilled oil.</p>
+                                <div class="product-rating" aria-label="Rated 4.7 out of 5">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-half"></i>
+                                    <span>4.7</span>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">₹29.99</span>
+                                    <button type="button" class="btn btn-buy">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="col-sm-6 col-lg-3" data-reveal data-reveal-delay="200">
+                        <div class="product-card">
+                            <div class="product-img-wrap">
+                                <span class="product-tag">New</span>
+                                <img src="https://images.unsplash.com/photo-1571781926291-c477ebfd024b?q=80&w=600&auto=format&fit=crop"
+                                    alt="Digital blood pressure monitor device">
+                            </div>
+                            <div class="product-body">
+                                <h3>BP Monitor Pro</h3>
+                                <p>Clinically validated, at-home blood pressure tracking.</p>
+                                <div class="product-rating" aria-label="Rated 4.9 out of 5">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                    <span>4.9</span>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">₹59.99</span>
+                                    <button type="button" class="btn btn-buy">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="col-sm-6 col-lg-3" data-reveal data-reveal-delay="300">
+                        <div class="product-card">
+                            <div class="product-img-wrap">
+                                <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=600&auto=format&fit=crop"
+                                    alt="Probiotic gut health supplement capsules">
+                            </div>
+                            <div class="product-body">
+                                <h3>Daily Probiotic 40B</h3>
+                                <p>Gut health &amp; digestion support, 10 clinical strains.</p>
+                                <div class="product-rating" aria-label="Rated 4.6 out of 5">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-half"></i>
+                                    <span>4.6</span>
+                                </div>
+                                <div class="product-footer">
+                                    <span class="product-price">₹34.99</span>
+                                    <button type="button" class="btn btn-buy">Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Why Choose Us ===== -->
+        <section class="section why-section">
+            <div class="container">
+                <div class="section-head text-center" data-reveal>
+                    <p class="section-eyebrow">Why Choose Us</p>
+                    <h2 class="section-title">Trusted care, from consultation to cabinet</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-sm-6 col-lg-4" data-reveal>
+                        <div class="why-card">
+                            <div class="why-icon"><i class="bi bi-clipboard2-pulse"></i></div>
+                            <h3>Doctor Recommended</h3>
+                            <p>Every product is personally tested and approved by Dr. Sharma before it's listed.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4" data-reveal data-reveal-delay="100">
+                        <div class="why-card">
+                            <div class="why-icon"><i class="bi bi-patch-check"></i></div>
+                            <h3>Certified Products</h3>
+                            <p>Sourced only from GMP and FDA-registered manufacturers you can rely on.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4" data-reveal data-reveal-delay="200">
+                        <div class="why-card">
+                            <div class="why-icon"><i class="bi bi-shield-check"></i></div>
+                            <h3>Safe Ingredients</h3>
+                            <p>No fillers, no unnecessary additives &mdash; just what your body actually needs.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4" data-reveal>
+                        <div class="why-card">
+                            <div class="why-icon"><i class="bi bi-gem"></i></div>
+                            <h3>Trusted Quality</h3>
+                            <p>Batch-tested for purity and potency, backed by a satisfaction guarantee.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4" data-reveal data-reveal-delay="100">
+                        <div class="why-card">
+                            <div class="why-icon"><i class="bi bi-truck"></i></div>
+                            <h3>Fast Delivery</h3>
+                            <p>Orders ship within 24 hours, with tracking sent straight to your inbox.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4" data-reveal data-reveal-delay="200">
+                        <div class="why-card">
+                            <div class="why-icon"><i class="bi bi-lock"></i></div>
+                            <h3>Secure Payment</h3>
+                            <p>Encrypted checkout with every major card and digital wallet supported.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Medical Services ===== -->
+        <section id="services" class="section services-section">
+            <div class="container">
+                <div class="section-head text-center" data-reveal>
+                    <p class="section-eyebrow">Medical Services</p>
+                    <h2 class="section-title">Consultations tailored to your health goals</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-sm-6 col-lg-4" data-reveal>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="bi bi-person-hearts"></i></div>
+                            <h3>General Consultation</h3>
+                            <p>Comprehensive check-ins for everyday health concerns and follow-ups.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4" data-reveal data-reveal-delay="100">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="bi bi-heart-pulse"></i></div>
+                            <h3>Health Checkup</h3>
+                            <p>Full-body screening and diagnostics to catch issues before they grow.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4" data-reveal data-reveal-delay="200">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="bi bi-apple"></i></div>
+                            <h3>Nutrition Guidance</h3>
+                            <p>Personalized eating plans built around your lifestyle and lab results.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4" data-reveal>
+                        <div class="service-card">
+                            <div class="service-icon"><i class="bi bi-magic"></i></div>
+                            <h3>Skin Consultation</h3>
+                            <p>Dermatology guidance for chronic and cosmetic skin concerns alike.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4" data-reveal data-reveal-delay="100">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="bi bi-droplet-half"></i></div>
+                            <h3>Diabetes Care</h3>
+                            <p>Ongoing management and monitoring for type 1 and type 2 diabetes.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4" data-reveal data-reveal-delay="200">
+                        <div class="service-card">
+                            <div class="service-icon"><i class="bi bi-flower1"></i></div>
+                            <h3>Wellness Programs</h3>
+                            <p>Structured, multi-week programs for sleep, stress, and energy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Testimonials ===== -->
+        <section id="testimonials" class="section testimonials-section">
+            <div class="container">
+                <div class="section-head text-center" data-reveal>
+                    <p class="section-eyebrow">Testimonials</p>
+                    <h2 class="section-title">What patients say</h2>
+                </div>
+
+                <div class="testimonial-slider" data-reveal>
+                    <div class="testimonial-track" id="testimonialTrack">
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-rating" aria-label="Rated 5 out of 5">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>&ldquo;Dr. Sharma actually listens. She explained everything in plain language and
+                                    the supplements she recommended made a real difference within weeks.&rdquo;</p>
+                                <div class="testimonial-person">
+                                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop"
+                                        alt="Portrait of patient Meera Kapoor">
+                                    <div><strong>Meera Kapoor</strong><span>Patient since 2021</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-rating" aria-label="Rated 5 out of 5">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i>
+                                </div>
+                                <p>&ldquo;Booking was effortless and the follow-up care has been outstanding. I finally
+                                    have a doctor who treats the whole picture, not just symptoms.&rdquo;</p>
+                                <div class="testimonial-person">
+                                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&auto=format&fit=crop"
+                                        alt="Portrait of patient Rohan Verma">
+                                    <div><strong>Rohan Verma</strong><span>Patient since 2019</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="testimonial-rating" aria-label="Rated 4 point 5 out of 5">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-half"></i>
+                                </div>
+                                <p>&ldquo;The product recommendations are never pushy &mdash; just honest advice. My
+                                    cholesterol numbers have improved every visit since I started.&rdquo;</p>
+                                <div class="testimonial-person">
+                                    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=200&auto=format&fit=crop"
+                                        alt="Portrait of patient Sana Iyer">
+                                    <div><strong>Sana Iyer</strong><span>Patient since 2022</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-controls">
+                        <button type="button" class="testimonial-btn" id="testimonialPrev"
+                            aria-label="Previous testimonial"><i class="bi bi-arrow-left"></i></button>
+                        <div class="testimonial-dots" id="testimonialDots"></div>
+                        <button type="button" class="testimonial-btn" id="testimonialNext"
+                            aria-label="Next testimonial"><i class="bi bi-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Appointment Booking Form ===== -->
+        <section id="appointment" class="section appointment-section">
+            <div class="container">
+                <div class="row align-items-center gy-5">
+                    <div class="col-lg-5" data-reveal>
+                        <p class="section-eyebrow section-eyebrow-light">Book Appointment</p>
+                        <h2 class="section-title section-title-light">Let's talk about your health</h2>
+                        <p class="section-lead section-lead-light">Fill out the form and our care team will confirm your
+                            slot within one business day. For urgent concerns, please call the clinic directly.</p>
+                        <div class="appointment-info">
+                            <div><i class="bi bi-telephone-fill"></i> +91 9876543210</div>
+                            <div><i class="bi bi-clock-fill"></i> Mon &ndash; Sat, 9:00 AM &ndash; 6:00 PM</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7" data-reveal data-reveal-delay="150">
+                        <form class="appointment-form" id="appointmentForm" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="apptName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="apptName" name="name"
+                                        placeholder="Jane Doe" required>
+                                    <div class="invalid-feedback">Please enter your name.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="apptEmail" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="apptEmail" name="email"
+                                        placeholder="jane@example.com" required>
+                                    <div class="invalid-feedback">Please enter a valid email.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="apptPhone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="apptPhone" name="phone"
+                                        placeholder="+91 9876543210" required pattern="[0-9+\-\s()]{7,}">
+                                    <div class="invalid-feedback">Please enter a valid phone number.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="apptDate" class="form-label">Appointment Date</label>
+                                    <input type="date" class="form-control" id="apptDate" name="date" required>
+                                    <div class="invalid-feedback">Please choose a date.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="apptTime" class="form-label">Preferred Time</label>
+                                    <select class="form-select" id="apptTime" name="time" required>
+                                        <option value="" selected disabled>Select a time</option>
+                                        <option>9:00 AM &ndash; 11:00 AM</option>
+                                        <option>11:00 AM &ndash; 1:00 PM</option>
+                                        <option>2:00 PM &ndash; 4:00 PM</option>
+                                        <option>4:00 PM &ndash; 6:00 PM</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please select a time slot.</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="apptReason" class="form-label">Reason for Visit</label>
+                                    <select class="form-select" id="apptReason" name="reason">
+                                        <option value="" selected disabled>Select a reason</option>
+                                        <option>General Consultation</option>
+                                        <option>Health Checkup</option>
+                                        <option>Nutrition Guidance</option>
+                                        <option>Skin Consultation</option>
+                                        <option>Diabetes Care</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="apptMessage" class="form-label">Message</label>
+                                    <textarea class="form-control" id="apptMessage" name="message" rows="4"
+                                        placeholder="Tell us briefly what you'd like to discuss"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary-cta w-100 w-md-auto">
+                                        <i class="bi bi-calendar2-check"></i> Confirm Appointment
+                                    </button>
+                                    <p class="form-success" id="formSuccess" role="status">
+                                        <i class="bi bi-check-circle-fill"></i> Thank you! Your appointment request has
+                                        been received.
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Contact Section ===== -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-head text-center" data-reveal>
+                    <p class="section-eyebrow">Contact</p>
+                    <h2 class="section-title">Visit the clinic</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4" data-reveal>
+                        <div class="contact-card">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <h3>Address</h3>
+                            <p>Gurugram | Noida<br>Pin 132564</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" data-reveal data-reveal-delay="100">
+                        <div class="contact-card">
+                            <i class="bi bi-telephone-fill"></i>
+                            <h3>Phone &amp; Email</h3>
+                            <p>+91 9876543210<br>care@drpatailhealth.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4" data-reveal data-reveal-delay="200">
+                        <div class="contact-card">
+                            <i class="bi bi-clock-fill"></i>
+                            <h3>Working Hours</h3>
+                            <p>Mon &ndash; Sat: 9:00 AM &ndash; 5:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <a class="footer-brand" href="#home">
+                        <span class="brand-mark"><i class="bi bi-heart-pulse-fill"></i></span>
+                        <span>Dr. Patail</span>
+                    </a>
+                    <p>Trusted family medicine and doctor-vetted wellness products, dedicated to care that treats the
+                        whole person.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="Twitter / X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#products">Vitamin D3 + K2</a></li>
+                        <li><a href="#products">Omega-3 Fish Oil</a></li>
+                        <li><a href="#products">BP Monitor Pro</a></li>
+                        <li><a href="#products">Daily Probiotic</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">General Consultation</a></li>
+                        <li><a href="#services">Health Checkup</a></li>
+                        <li><a href="#services">Nutrition Guidance</a></li>
+                        <li><a href="#services">Diabetes Care</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4>Newsletter</h4>
+                    <p>Health tips, monthly.</p>
+                    <form class="footer-newsletter" id="newsletterForm">
+                        <label for="newsletterEmail" class="visually-hidden">Email address</label>
+                        <input type="email" id="newsletterEmail" placeholder="Your email" required>
+                        <button type="submit" aria-label="Subscribe"><i class="bi bi-send-fill"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Dr. Patail Health. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== Back to Top ===== -->
+    <button id="backToTop" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+</body>
+
+</html>
